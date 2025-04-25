@@ -1,72 +1,115 @@
-/* Reset de márgenes y padding */
-* {
+/* Estilo global */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fondo y fuentes generales */
-body {
+    height: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
 }
 
-/* Encabezado */
-header {
-    background-color: #1E3A8A;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2em;
-}
-
-/* Contenido principal */
-section {
-    margin: 20px 0;
-}
-
-section h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-#contact form {
+/* Sección de mantenimiento */
+#under-construction {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* La sección ocupa toda la pantalla */
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-#contact input, #contact textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 1em;
+/* Contenedor de la imagen */
+.image-container {
+    width: 100%;
+    height: 100%; /* La imagen ocupa toda la pantalla */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro detrás de la imagen */
+    z-index: -1; /* Asegurarse de que la imagen esté detrás del texto */
 }
 
-#contact button {
+.maintenance-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra toda la pantalla */
+    opacity: 0.7;
+}
+
+/* Contenedor de texto */
+.text-container {
+    z-index: 10;
+    margin-bottom: 40px;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    z-index: 10;
+}
+
+#email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#email-form input[type="email"] {
+    padding: 15px;
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#email-form input[type="email"]:focus {
+    border-color: #1E3A8A;
+    box-shadow: 0 0 10px rgba(30, 58, 138, 0.3);
+}
+
+#email-form button {
+    padding: 15px 30px;
+    font-size: 1.2em;
     background-color: #1E3A8A;
     color: white;
-    padding: 10px;
-    font-size: 1.2em;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#contact button:hover {
-    background-color: #1a2b59;
+#email-form button:hover {
+    background-color: #4A73C8;
 }
 
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+/* Mensaje de agradecimiento */
+#thanks-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #28a745;
+    font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}

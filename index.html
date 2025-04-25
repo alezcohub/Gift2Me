@@ -1,30 +1,29 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estamos trabajando en nuestra página</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener este archivo CSS vinculado -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section id="under-construction">
-        <div class="container">
-            <!-- Imagen de mantenimiento -->
-            <img src="images/fotogiftcard1.png" alt="Estamos en mantenimiento" class="maintenance-img">
+        <div class="overlay">
+            <div class="content">
+                <h2>¡Estamos trabajando en nuestra página web!</h2>
+                <p>Deja tu correo para beneficiarte de un descuento exclusivo el día de apertura.</p>
 
-            <h2>¡Estamos trabajando en nuestra página web!</h2>
-            <p>Deja tu correo para beneficiarte de un descuento exclusivo el día de apertura.</p>
+                <!-- Formulario de correo -->
+                <form id="email-form">
+                    <input type="email" id="email" placeholder="Ingresa tu correo" required>
+                    <button type="submit">Notificarme</button>
+                </form>
 
-            <!-- Formulario de correo -->
-            <form id="email-form">
-                <input type="email" id="email" placeholder="Ingresa tu correo" required>
-                <button type="submit">Notificarme</button>
-            </form>
-
-            <p id="thanks-message" class="hidden">¡Gracias por registrarte! Te notificaremos cuando la página esté lista.</p>
+                <p id="thanks-message" class="hidden">¡Gracias por registrarte! Te notificaremos cuando la página esté lista.</p>
+            </div>
         </div>
     </section>
 
-    <script src="script.js"></script> <!-- Asegúrate de tener este archivo JS vinculado -->
+    <script src="script.js"></script> <!-- Vincula tu archivo JS -->
 </body>
 </html>
