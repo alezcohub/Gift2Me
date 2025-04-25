@@ -33,8 +33,7 @@ body, html {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Asegura que la imagen cubra toda la pantalla */
-    /* Eliminamos la opacidad para que sea completamente visible */
-    opacity: 1; /* 100% visible */
+    opacity: 1; /* Imagen completamente visible */
 }
 
 /* Contenedor de texto */
@@ -45,15 +44,15 @@ body, html {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;  /* Tamaño más pequeño para que el texto ocupe menos espacio */
     font-weight: bold;
     margin: 20px 0;
     color: #ffffff;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Hacer que el texto sea en mayúsculas */
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;  /* También reducimos el tamaño del párrafo */
     margin-bottom: 20px;
     color: #ffffff;
 }
@@ -113,3 +112,4 @@ p {
 .hidden {
     display: none;
 }
+
