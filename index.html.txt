@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift2Me - Compra y Vende Gift Cards</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Gift2Me</h1>
+        <p>Compra y vende tus tarjetas regalo de forma segura.</p>
+    </header>
+    <footer>
+        <p>Contacto: gift2me.contact@gmail.com</p>
+    </footer>
+</body>
+</html>
