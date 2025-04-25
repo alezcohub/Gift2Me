@@ -1,0 +1,72 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y fuentes generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #1E3A8A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Contenido principal */
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#contact button {
+    background-color: #1E3A8A;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #1a2b59;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
